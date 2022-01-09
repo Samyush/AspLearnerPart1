@@ -11,10 +11,17 @@ namespace ConsloleAppToDel
         static void Main(string[] args)
         {
 
-            UsingPrivateReadOnly prv = new UsingPrivateReadOnly(5);
+            //UsingPrivateReadOnly prv = new UsingPrivateReadOnly(5);
+            
+            // objects can be defined as follows too of line 14
+            UsingPrivateReadOnly prv = new(5);
+
             prv.printer();
 
-            GetData getData = new GetData();
+            //GetData getData = new GetData();
+
+            //new object can be defined as follows too
+            GetData getData = new();
             // if not static, it is done as follows:
             // getData.GettingData();
 

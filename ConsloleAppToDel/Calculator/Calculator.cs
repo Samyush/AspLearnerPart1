@@ -6,26 +6,26 @@ namespace ConsloleAppToDel
 {
     class Calculator
     {
-        int num2 { get; set; }
-        int num1 { get; set; }
+        int Num2 { get; set; }
+        int Num1 { get; set; }
 
         public Calculator(int num1, int num2)
         {
-            this.num1 = num1;
-            this.num2 = num2;
+            this.Num1 = num1;
+            this.Num2 = num2;
         }
 
-        public int Adds() =>  num1 + num2;
+        public int Adds() =>  Num1 + Num2;
 
         public void Add()
         {
-            int sum = num1 + num2;
+            int sum = Num1 + Num2;
             Console.WriteLine("Sum of two numbers is " + sum);
         }
 
         public void Subtract()
         {
-            int ghatau = num1 - num2;
+            int ghatau = Num1 - Num2;
 
             Console.WriteLine("ghatau of two numbers is " + ghatau);
         }
@@ -33,7 +33,7 @@ namespace ConsloleAppToDel
         public void Multiply()
         {
 
-            int multi = num1 * num2;
+            int multi = Num1 * Num2;
 
             Console.WriteLine("Multiple is: " + multi);
 

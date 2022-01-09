@@ -8,7 +8,7 @@ namespace ConsloleAppCalculator
     public class Lamda
     {
         delegate dynamic Hisab(int x, int y);
-        public void Lamdas()
+        public static void Lamdas()
         {
             //var calculation = new Calculator(3, 4);
 

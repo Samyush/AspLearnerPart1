@@ -16,7 +16,10 @@ namespace ConsloleAppCalculator.FetchDataAPI
 
             try
             {
-                using (HttpClient client = new HttpClient())
+                //using (HttpClient client = new HttpClient())
+
+                //objects can be made as belows too
+                using (HttpClient client = new())
                 {
                     using (HttpResponseMessage response = await client.GetAsync(baseUrl))
                     {
