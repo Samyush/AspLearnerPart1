@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace ConsloleAppToDel
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             //UsingPrivateReadOnly prv = new UsingPrivateReadOnly(5);
@@ -40,12 +40,12 @@ namespace ConsloleAppToDel
             Employee emp = listEmployees.Find(x => x.Id == 1);
             Console.WriteLine(emp.Name);
 
-            int count = listEmployees.Count(x => x.Name.StartsWith("s"));
+            var count = listEmployees.Count(x => x.Name.StartsWith("s"));
             Console.WriteLine(count);
 
             string num1,num2;
 
-            Console.WriteLine("Welcome to Our Console Calculator Applicaiton");
+            Console.WriteLine("Welcome to Our Console Calculator Application");
 
             //Console.WriteLine("Hello World!");
             Console.Write("Please Enter 1st num ");

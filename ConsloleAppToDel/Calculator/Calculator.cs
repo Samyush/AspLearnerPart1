@@ -25,7 +25,7 @@ namespace ConsloleAppToDel
 
         public void Subtract()
         {
-            int ghatau = Num1 - Num2;
+            var ghatau = Num1 - Num2;
 
             Console.WriteLine("ghatau of two numbers is " + ghatau);
         }
@@ -33,12 +33,12 @@ namespace ConsloleAppToDel
         public void Multiply()
         {
 
-            int multi = Num1 * Num2;
+            var multi = Num1 * Num2;
 
             Console.WriteLine("Multiple is: " + multi);
 
             var multiple = new int[3, 4] { { 0, 1, 2, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10, 11 }, };
-            Console.WriteLine("multidimension array " + multiple[2, 3]);
+            Console.WriteLine("multidimensional array " + multiple[2, 3]);
 
         }
 
