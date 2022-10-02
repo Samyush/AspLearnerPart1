@@ -4,8 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+string testing;
+
 namespace ConsloleAppToDel
 {
+
     static class Program
     {
         private static void Main(string[] args)

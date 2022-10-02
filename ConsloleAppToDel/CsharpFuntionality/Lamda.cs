@@ -13,8 +13,12 @@ namespace ConsloleAppCalculator
             //var calculation = new Calculator(3, 4);
 
             Hisab cal = (x,y) => x + y;
+            Hisab next = (a,y) => a - y;
 
             cal(4, 6);
+
+            cal(5, 7);
+            next(7, 1);
             //return calculation;
 
         }
