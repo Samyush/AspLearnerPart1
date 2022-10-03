@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-string testing;
-
 namespace ConsloleAppToDel
 {
 
