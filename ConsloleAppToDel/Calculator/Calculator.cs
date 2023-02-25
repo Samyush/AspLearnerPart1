@@ -1,46 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ConsloleAppToDel
+namespace ConsloleAppToDel;
+
+internal class Calculator
 {
-    class Calculator
+    public Calculator(int num1, int num2)
     {
-        int Num2 { get; set; }
-        int Num1 { get; set; }
+        Num1 = num1;
+        Num2 = num2;
+    }
 
-        public Calculator(int num1, int num2)
-        {
-            this.Num1 = num1;
-            this.Num2 = num2;
-        }
+    private int Num2 { get; }
+    private int Num1 { get; }
 
-        public int Adds() =>  Num1 + Num2;
+    public int Adds()
+    {
+        return Num1 + Num2;
+    }
 
-        public void Add()
-        {
-            int sum = Num1 + Num2;
-            Console.WriteLine("Sum of two numbers is " + sum);
-        }
+    public void Add()
+    {
+        var sum = Num1 + Num2;
+        Console.WriteLine("Sum of two numbers is " + sum);
+    }
 
-        public void Subtract()
-        {
-            var ghatau = Num1 - Num2;
+    public void Subtract()
+    {
+        var ghatau = Num1 - Num2;
 
-            Console.WriteLine("ghatau of two numbers is " + ghatau);
-        }
+        Console.WriteLine("ghatau of two numbers is " + ghatau);
+    }
 
-        public void Multiply()
-        {
+    public void Multiply()
+    {
+        var multi = Num1 * Num2;
 
-            var multi = Num1 * Num2;
+        Console.WriteLine("Multiple is: " + multi);
 
-            Console.WriteLine("Multiple is: " + multi);
-
-            var multiple = new int[3, 4] { { 0, 1, 2, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10, 11 }, };
-            Console.WriteLine("multidimensional array " + multiple[2, 3]);
-
-        }
-
+        var multiple = new int[3, 4] {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 10, 11}};
+        Console.WriteLine("multidimensional array " + multiple[2, 3]);
     }
 }
