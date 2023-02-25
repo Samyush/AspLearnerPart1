@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ConsoleAppCalculator;
 
-namespace ConsloleAppCalculator
+public class APIdataFetcher
 {
-    public class APIdataFetcher
+    public APIdataFetcher(string name, string url)
     {
-        public APIdataFetcher(string name, string url)
-        {
-            Name = name;
-        }
-
-        public string Name { get; set; }
+        Name = name;
     }
+
+    public string Name { get; set; }
 }
 
 //https://alialhaddad.medium.com/how-to-fetch-data-in-c-net-core-ea1ab720e3f9

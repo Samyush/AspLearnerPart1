@@ -1,26 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsloleAppCalculator
+namespace ConsoleAppCalculator;
+
+public class UsingPrivateReadOnly
 {
-    public class UsingPrivateReadOnly
+    public UsingPrivateReadOnly(int count)
     {
-        private readonly int _count;
+        Count = count;
+    }
 
-        public UsingPrivateReadOnly(int count)
-        {
-            this._count = count;
-        }
+    public int Count { get; }
 
-        public int Count => _count;
-
-        public void printer()
-        {
-            Console.WriteLine(Count);
-
-        }
+    public void printer()
+    {
+        Console.WriteLine(Count);
     }
 }
